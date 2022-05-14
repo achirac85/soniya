@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Chambres
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'/asset/css/header.css'}}">
+	<link rel="stylesheet" href="{{'/asset/css/form.css'}}">
+	<link rel="stylesheet" href="{{'/asset/css/footer.css'}}">
+{% endblock %}
+
+{% block body %}
+	<br><br><br><br><br><br><br>
+	<div>
+		<h1>Liste des chambres</h1>
+		<div class="trait"></div>
+		<a href="{{ path('product_new') }}">
+			<button>Créer</button>
+		</a>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Nom</th>
+					<th>Prix</th>
+					<th>Slug</th>
+					<th>Category</th>
+					<th>Description</th>
+					<th>Photo</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for product in products %}
+					<tr>
+						<td>{{ product.id }}</td>
+						<td>{{ product.name }}</td>
+						<td>{{ product.name }}</td>
+						<td>{{ product.slug }}</td>
+						<td>{{ product.category }}</td>
+						<td>{{ product.description }}</td>
+						<td><img src="{{ dossier_images ~ chambre.picture }}"></td>
+						<td>
+							<a href="{{ path('product_show', {'id': product.id}) }}">
+								<i class="fas fa-eye"></i>
+							</a>
+							<a href="{{ path('product_edit', {'id': product.id}) }}">
+								<i class="fas fa-pencil-alt"></i>
+							</a>
+						</td>
+					</tr>
+
+				{% else %}
+					<tr>
+						<td colspan="8">no records found</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+
+	</div>
+
+{% endblock %}

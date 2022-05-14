@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produit
+{% endblock %}
+
+{% block body %}
+	<h1>Voir les produit</h1>
+	<div class="trait"></div>
+
+	<a href="{{ path('product_index') }}">
+		<i class="fas fa-undo-alt" id="return"></i>
+	</a>
+	<a href="{{ path('product_edit', {'id': chambre.id}) }}">
+		<button class="btnModif">Modifier</button>
+	</a>
+
+	<table class="table">
+		<tbody>
+			<tr>
+				<th>Id</th>
+				<th>{{ product.id}}</th>
+
+			</tr>
+			<tr>
+				<th>Nom</th>
+				<td>{{ product.name }}</td>
+			</tr>
+
+			<tr>
+				<th>slug</th>
+				<td>{{ product.slug }}</td>
+			</tr>
+			<tr>
+				<th>Prix</th>
+				<td>{{ product.price }}</td>
+			</tr>
+			<tr>
+				<th>Categorie</th>
+				<td>{{ product.category }}</td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td>{{ product.description }}</td>
+			</tr>
+			<tr>
+				<td>{{ product.id }}</td>
+				<td><img src="{{ dossier_images ~ chambre.picture }}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	{{ include('productadmin/_delete_form.html.twig') }}
+
+
+{% endblock %}

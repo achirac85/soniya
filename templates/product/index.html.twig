@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Chambres
+{% endblock %}
+{% block stylesheets %}
+     <link rel="stylesheet" href="{{ asset('asset/css/form.css')}}">
+{% endblock %}
+
+{% block body %}
+	<h1>Liste des chambres</h1>
+	<div class="trait"></div>
+	<a href="#">
+		<button>Créer</button>
+	</a>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+                <th>price</th>
+				<th>slug</th>
+				<th>categorie</th>
+				<th>Disponibilite</th>
+				<th>description</th>
+				<th>Prix</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			
+				<tr>
+					<td>{{product.id }}</td>
+					<td>{{ product.name }}</td>
+                    <td>{{ product.price }}</td>
+					<td>{{ product.slug}}</td>
+					<td>{{ product.category }}</td>
+					<td>{{ product.description }}</td>
+					
+				</tr>
+
+			{% else %}
+				<tr>
+					<td colspan="8">no records found</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+
+
+{% endblock %}

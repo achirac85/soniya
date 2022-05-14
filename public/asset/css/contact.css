@@ -1,0 +1,50 @@
+main {
+    background-color: aqua;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+form {
+    background-color: tan;
+}
+
+legend {
+    color: firebrick;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+#deco {
+    display: flex;
+}
+
+.contact {
+    width: 450px;
+}
+
+.table {
+    width: 350px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1120px) {
+    #deco {
+        display: block;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .table {
+        display: none;
+    }
+
+    form {
+        margin-top: 100px;
+    }
+}

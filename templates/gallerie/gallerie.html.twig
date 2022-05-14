@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Gallerie
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'asset/css/gallerie.css'}}">
+	<link rel="stylesheet" href="{{'asset/css/lightbox.min.css'}}">
+{% endblock %}
+{% block javascripts %}
+	<script src="{{'asset/js/lightbox-plus-jquery.min.js'}}"></script>
+{% endblock %}
+{% block body %}
+	<main>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<div class="gallery">
+			<a href="{{'asset/imageGL/1.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/1.jpg'}}" alt="photo galerie1"></a>
+			<a href="{{'asset/imageGL/2.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/2.jpg'}}" alt="photo galerie2"></a>
+			<a href="{{'asset/imageGL/3.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/3.jpg'}}" alt="photo galerie3"></a>
+			<a href="{{'asset/imageGL/4.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/4.jpg'}}" alt="photo galerie4"></a>
+			<a href="{{'asset/imageGL/5.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/5.jpg'}}" alt="photo galerie5"></a>
+			<a href="{{'asset/imageGL/6.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/6.jpg'}}" alt="photo galerie6"></a>
+			<a href="{{'asset/imageGL/7.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/7.jpg'}}" alt="photo galerie7"></a>
+			<a href="{{'asset/imageGL/8.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/8.jpg'}}" alt="photo galerie8"></a>
+			<a href="{{'asset/imageGL/9.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/9.jpg'}}" alt="photo galerie9"></a>
+			<a href="{{'asset/imageGL/10.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/10.jpg'}}" alt="photo galerie10"></a>
+			<a href="{{'asset/imageGL/11.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/11.jpg'}}" alt="photo galerie11"></a>
+			<a href="{{'asset/imageGL/12.jpg'}}" data-lightbox="mygallery" data-title="lorem ipsum"><img class="A1" src="{{'asset/imageGL/12.jpg'}}" alt="photo galerie12"></a>
+		</div>
+	</main>
+{% endblock %}

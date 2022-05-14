@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Accueil
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'asset/css/accueil.css'}}">
+{% endblock %}
+{% block javascripts %}
+	<script src="{{'asset/js/accueil.js'}}"></script>
+{% endblock %}
+{% block body %}
+	<main>
+		<br><br><br><br><br><br><br><br><br><br><br><br>
+		<section id="section1">
+			<img class="p1" src="{{'asset/imageAC/1.jpg'}}" alt="premiere image">
+			<div id="apropos">
+				<div>
+					<h2>DESIGN CONTEMPORAINES ET ECO-RESPONSABLE</h2>
+					<p>Souniya est spécialisée dans la vente de vaisselles et ustensiles des cuisines en bois.<br>
+						Elle oeuvre aussi dans la fabrication de tout produit à base de coquille de coco, bambou, osier coquillage et d'autres matières naturelles.</p>
+					<p>Souniya promeut les créations contemporaines d’artisans Malgache et s’inscrit pleinement dans une démarche de développement durable et solidaire.</p>
+					<P>Souniya diffuse et développe, dans le respect du commerce équitable, l’exportation du savoir-faire d’artisans Malgache,<br>
+						qui tout en perpétuant et revitalisant des techniques traditionnelles ancestrales</P>
+				</div>
+				<div>
+					<img class="prochainement" src="{{'asset/imageLG/ouverture.jpg'}}" alt="prochaine ouverture">
+				</div>
+			</div>
+		</section>
+		<br><br>
+	</main>
+{% endblock %}

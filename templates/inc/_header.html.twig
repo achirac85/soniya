@@ -1,0 +1,29 @@
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'asset/css/header.css'}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+{% endblock %}
+<header>
+	<div class="panier">
+		<img class="logo" src="{{'asset/imageLG/logo.png'}}" alt="logo souniya">
+		<ul class="connect">
+			<li>
+				<a href="{{ path('connexion')}}">Connectez-vous</a>
+			</li>
+			<li>
+				<a href="{{ path('inscription')}}">Inscrivez-vous</a>
+			</li>
+			<li>
+				<a href="">
+					<i class="fa-solid fa-basket-shopping"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<blockquote>"La signature du savoir-faire malagasy"</blockquote>
+	<nav>
+		<a href="{{ path('accueil')}}">accueil</a>
+		<a href="{{ path('produit')}}">nos produits</a>
+		<a href="{{ path('gallerie')}}">galerie</a>
+		<a href="{{ path('contact')}}">contact</a>
+	</nav>
+</header>

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: aqua;
+    margin: auto;
+}
+
+.A1 {
+    width: 400px;
+    margin: 20px;
+}
+
+.gallery img {
+    transition: 1s;
+}
+
+.gallery img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1120px) {
+    .A1 {
+        width: 520px;
+        margin-left: 200px;
+        margin-top: 95px;
+    }
+}

@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	connection
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'asset/css/connexion.css'}}">
+{% endblock %}
+{% block body %}
+	<main>
+		<br><br><br><br><br><br><br>
+		<div class="connect2">
+			<div>
+				<img class="lampader" src="{{'asset/imageLG/RN.jpg'}}" alt="miconnecte">
+			</div>
+			<div>
+				<form action="">
+					<fieldset>
+						<legend>CONNECTEZ-VOUS</legend>
+						<div>
+							<label for="emailinput">Votre email</label><br>
+							<input type="email" name="email" id="emailinput" placeholder="contact@demo.com" required>
+						</div>
+						<div>
+							<label for="motdepasse">Mot de passe</label><br>
+							<input type="password" id="motdepasse" name="motdepasse" minlength="6" maxlength="9" required>
+						</div>
+						<input type="submit" value="valider">
+					</fieldset>
+				</form>
+			</div>
+			<div>
+				<img class="lampader" src="{{'asset/imageLG/RN.jpg'}}" alt="miconnecte">
+			</div>
+		</div>
+	</main>
+{% endblock %}

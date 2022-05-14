@@ -1,0 +1,145 @@
+/*----------------HEADER---------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(105, 129, 108, 0.87);
+    width: 100%;
+    font-size: 34px;
+    position: fixed;
+}
+
+blockquote {
+    margin-left: 650px;
+    color: khaki;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: cursive;
+}
+
+nav {
+    margin-left: 650px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgb(95, 79, 68);
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 25px;
+
+}
+
+nav a {
+    border: solid goldenrod 3px;
+    color: lightcoral;
+    background-color: lightslategrey;
+    box-shadow: 10px 5px 5px goldenrod;
+}
+
+.logo {
+    width: 250px;
+}
+
+.panier {
+    display: flex;
+    justify-content: space-around;
+}
+
+.connect {
+    display: flex;
+    margin-left: 430px;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.connect li {
+    margin: 30px;
+    border: solid 3px;
+    border-radius: 15px;
+    background-color: cornsilk;
+    padding: 15px;
+    height: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 1120px) {
+    header {
+        background-color: rgba(105, 129, 108, 0.87);
+        width: 100%;
+        font-size: 15px;
+        position: fixed;
+    }
+
+    blockquote {
+        margin-left: 40px;
+        color: khaki;
+        position: relative;
+        margin-top: 10px;
+        font-family: fantasy;
+    }
+
+    nav {
+        margin-left: 40px;
+        display: block;
+        flex-direction: column;
+    }
+
+    nav a:hover {
+        color: #ffffff;
+        background-color: rgb(95, 79, 68);
+        text-transform: uppercase;
+        transition: 0.5s;
+        border-radius: 5px;
+        margin-left: 30px;
+        padding: 25px;
+
+    }
+
+    nav a {
+        border: solid goldenrod 3px;
+        color: lightcoral;
+        background-color: lightslategrey;
+        box-shadow: 10px 5px 5px goldenrod;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .panier {
+        display: block;
+        flex-direction: column;
+    }
+
+    .connect {
+        display: block;
+        margin-left: 50px;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .connect li {
+        border: solid 3px;
+        border-radius: 15px;
+        background-color: cornsilk;
+        padding: 15px;
+        height: 20px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 120px;
+        margin: 4px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

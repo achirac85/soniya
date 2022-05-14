@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+{% block title %}
+	Produit
+{% endblock %}
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{'asset/css/produit.css'}}">
+{% endblock %}
+{% block body %}
+	<main>
+		<div class="container">
+			<br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1>Nos produits phares</h1>
+			<div class="row1">
+				<div class="col">
+					<div class="card">
+						<img src="{{ 'asset/imageNP/A.jpg' }}" class="card-img-top">
+						<div class="card-body">
+							<h5 class="card-title">
+								Prix: Ariary</h5>
+							<p class="card-text">description</p>
+							<a href="#" class="btn">Détails</a>
+							<a href="#" class="btn">Ajouter</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br><br>
+	</main>
+{% endblock %}

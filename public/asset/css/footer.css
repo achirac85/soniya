@@ -1,0 +1,50 @@
+footer ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: 550px;
+}
+
+footer ul li {
+    font-size: 59px;
+}
+
+footer {
+    background-color: seagreen;
+    width: 100%;
+}
+
+footer p {
+    margin-left: 100px;
+}
+
+footer a {
+    margin-left: 130px;
+    font-size: 30px;
+
+}
+
+@media screen and (max-width: 1120px) {
+    footer ul {
+        display: block;
+        list-style-type: none;
+        margin-left: 100px;
+    }
+
+    footer ul li {
+        font-size: 20px;
+    }
+
+    footer {
+        background-color: seagreen;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    footer a {
+        text-align: center;
+        font-size: 40px;
+
+    }
+}
